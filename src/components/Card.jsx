@@ -15,12 +15,17 @@ function Card({
     let btnColor = '';
 
     {/**variabile per gestire popolamento del contenuto del p */ }
-    let pContent = '{content}'
+    let pContent = ''
 
     {/**mia variabile di stato */ }
 
     const [isOpen, setIsOpen] = useState(false); { {/** setto il toggle chiuso */ } }
 
+    if (isOpen) {
+        btnColor = 'btn-warning';
+    } else {
+        btnColor = 'btn-primary';
+    }
 
     {/** funzione clickHandler */ }
     const clickHandler = (event) => {
