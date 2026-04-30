@@ -12,26 +12,29 @@ function Card({
     content = "A wonderful description of language's peculiarities and fun facts"
 }) {
     {/**variabile per gestire cambiamento del colore della variabile */ }
-    let btnColor = 'btn-primary';
+    let btnColor = '';
+
+    {/**variabile per gestire popolamento del contenuto del p */}
+    let pContent = ''
 
     {/**mia variabile di stato */ }
    
     const [isOpen, setIsOpen] = useState(false); {{/** setto il toggle chiuso */}}
     
+    s
 
      {/** funzione clickHandler */ }
 
     const clickHandler = (event) {
         console.log("click!");
         setIsOpen(!isOpen);
-
     }
 
     return <>
         <div className="card">
             <div className="card-body">
                 <a href="#" onClick={clickHandler} className={`btn ${btnColor}`}>{title}</a>
-                <p className="card-text py-1">{content}</p>
+                <p className="card-text py-1">{pContent}</p>
             </div>
         </div>
     </>
