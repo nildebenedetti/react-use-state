@@ -19,7 +19,7 @@ function Card({
 
     {/**mia variabile di stato */ }
 
-    const [isOpen, setIsOpen] = useState(false); { {/** setto il toggle chiuso */ } }
+    const [isOpen, setIsOpen] = useState(true); { {/** setto il toggle chiuso */ } }
 
     if (isOpen) {
         btnColor = 'btn-warning';
@@ -27,9 +27,16 @@ function Card({
         btnColor = 'btn-primary';
     }
 
+    if (isOpen) {
+        pContent = content;
+    } else {
+        pContent = null;
+    }
+
     {/** funzione clickHandler */ }
     const clickHandler = (event) => {
         console.log('click!');
+        
     }
 
     return <>
