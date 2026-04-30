@@ -10,3 +10,8 @@
   componenti. Per stili specifici di un singolo componente è preferibile
   usare un CSS Module (es. `NomeComponente.module.css`).
 */
+
+.card {
+  max-width: 450px;
+}
+
