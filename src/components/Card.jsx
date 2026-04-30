@@ -14,20 +14,17 @@ function Card({
     {/**variabile per gestire cambiamento del colore della variabile */ }
     let btnColor = '';
 
-    {/**variabile per gestire popolamento del contenuto del p */}
-    let pContent = ''
+    {/**variabile per gestire popolamento del contenuto del p */ }
+    let pContent = '{content}'
 
     {/**mia variabile di stato */ }
-   
-    const [isOpen, setIsOpen] = useState(false); {{/** setto il toggle chiuso */}}
-    
-    s
 
-     {/** funzione clickHandler */ }
+    const [isOpen, setIsOpen] = useState(false); { {/** setto il toggle chiuso */ } }
 
-    const clickHandler = (event) {
-        console.log("click!");
-        setIsOpen(!isOpen);
+
+    {/** funzione clickHandler */ }
+    const clickHandler = (event) => {
+        console.log('click!');
     }
 
     return <>
