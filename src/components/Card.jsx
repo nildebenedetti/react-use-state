@@ -1,3 +1,7 @@
+{/** IMPORTANTEEEEEEE - Importo la libreria useState
+    Altrimenti x-factor per me finisce qui */}
+    import { useState } from "react";
+
 {/* aggiungo lóggetto props direttamente con il destructuring 
     e assegno valore per creare destructuring */}
 
