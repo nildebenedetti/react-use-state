@@ -1,29 +1,38 @@
 {/** IMPORTANTEEEEEEE - Importo la libreria useState
     Altrimenti x-factor per me finisce qui */}
-    import { useState } from "react";
+import { useState } from "react";
+
+
 
 {/* aggiungo lóggetto props direttamente con il destructuring 
     e assegno valore per creare destructuring */}
 
-function Card({ 
+function Card({
     title = "My Language",
     content = "A wonderful description of language's peculiarities and fun facts"
-}) { 
-    {/**variabile per gestire cambiamento del colore della variabile */}
+}) {
+    {/**variabile per gestire cambiamento del colore della variabile */ }
     let btnColor = 'btn-primary';
 
-    {/** funzione clickHandler */}
+    {/**mia variabile di stato */ }
+   
+    const [isOpen, setIsOpen] = useState(false); {{/** setto il toggle chiuso */}}
+    
 
-    function clickHandler(event){
-        console.log("click!");      
+     {/** funzione clickHandler */ }
+
+    const clickHandler = (event) {
+        console.log("click!");
+        setIsOpen(!isOpen);
+
     }
 
     return <>
         <div className="card">
-                <div className="card-body">
-                    <a href="#" onClick={clickHandler} className={`btn ${btnColor}`}>{title}</a>
-                    <p className="card-text py-1">{content}</p>
-                </div>
+            <div className="card-body">
+                <a href="#" onClick={clickHandler} className={`btn ${btnColor}`}>{title}</a>
+                <p className="card-text py-1">{content}</p>
+            </div>
         </div>
     </>
 
