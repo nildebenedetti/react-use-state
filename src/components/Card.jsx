@@ -9,8 +9,8 @@ function Card({
     return <>
         <div className="card">
                 <div className="card-body">
-                    <a href="#" className="btn btn-primary">{`${title}`}</a>
-                    <p className="card-text py-1">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" className="btn btn-primary">{title}</a>
+                    <p className="card-text py-1">{content}</p>
                 </div>
         </div>
     </>
