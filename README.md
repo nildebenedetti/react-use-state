@@ -9,7 +9,7 @@ Se il bottone viene cliccato, cambia colore e la descrizione diventa visibile al
 
 Trovate sia array che file JS con i dati in allegato
 
-Bonus :babyyoda: 
+Bonus
 
 Crea una lista di bottoni, uno per  linguaggio.
 Sotto i bottoni, inserisci una singola card. In partenza, questa card mostra il  titolo e la descrizione del primo linguaggio nell’array.

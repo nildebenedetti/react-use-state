@@ -11,33 +11,21 @@ function Card({
     title = "My Language",
     content = "A wonderful description of language's peculiarities and fun facts"
 }) {
-    {/**variabile per gestire cambiamento del colore della variabile */ }
-    let btnColor = '';
-
-    {/**variabile per gestire popolamento del contenuto del p */ }
-    let pContent = ''
 
     {/**mia variabile di stato */ }
 
     const [isOpen, setIsOpen] = useState(false); { {/** setto il toggle chiuso */ } }
 
-    if (isOpen) {
-        btnColor = 'btn-warning';
-    } else {
-        btnColor = 'btn-primary';
-    }
+      {/**variabile per gestire cambiamento del colore della variabile */ }
+    const btnColor = isOpen? 'btn-warning' : 'btn-primary';
 
-    if (isOpen) {
-        pContent = content;
-    } else {
-        pContent = null;
-    }
+    {/**variabile per gestire popolamento del contenuto del p */ }
+    const pContent = isOpen? content : null;
 
     {/** funzione clickHandler */ }
     const clickHandler = (event) => {
-        console.log('click!');
-        setIsOpen(!isOpen);
-        
+        setIsOpen(!isOpen); // setto valore diverso da open, essendo booleano e'perpetuo lo switch
+                            // lei deve fare solo da interruttore
     }
 
     return <>
