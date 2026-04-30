@@ -1,5 +1,5 @@
 import Card from "./components/Card";
-import languages from "./components/data/languages";
+import languages from "./data/languages";
 
 
 function App() {
